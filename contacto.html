@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Canino: Contacto y Colaboración</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Contáctanos para preguntas sobre razas, sugerencias o formas de colaboración.">
+    <meta name="keywords" content="contacto, formulario, colaboración, preguntas, razas de perros, ayuda">
+    <meta name="author" content="Tu Nombre">
+    <!-- Fuentes de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Mundo Canino: Razas del Mundo</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="razas.html">Razas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="contact-form-section" class="form-section">
+            <h2>Envíanos un Mensaje o Consulta</h2>
+            <p>¿Tienes alguna pregunta sobre una raza específica, quieres sugerir una mejora para el sitio, o simplemente compartir tu amor por los perros? ¡Estamos aquí para escucharte!</p>
+
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="tu.email@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipoConsulta">Tipo de Consulta:</label>
+                    <select id="tipoConsulta" name="tipoConsulta" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="preguntaRaza">Pregunta sobre una raza</option>
+                        <option value="sugerenciaWeb">Sugerencia para la web</option>
+                        <option value="colaboracion">Propuesta de colaboración</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="razaInteres">Raza de Interés (si aplica):</label>
+                    <input type="text" id="razaInteres" name="razaInteres" placeholder="Ej: Golden Retriever">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Tu Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Enviar Mensaje</button>
+            </form>
+        </section>
+
+        <section id="breed-stats" class="table-section">
+            <h2>Datos Curiosos de Razas (Estimados)</h2>
+            <p>Una pequeña muestra de datos comparativos entre algunas razas populares.</p>
+
+            <div class="table-responsive">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Raza</th>
+                            <th>Origen</th>
+                            <th>Tamaño (aprox.)</th>
+                            <th>Esperanza de Vida (años)</th>
+                            <th>Nivel de Energía</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Labrador Retriever</td>
+                            <td>Canadá</td>
+                            <td>Grande</td>
+                            <td>10-12</td>
+                            <td>Alto</td>
+                        </tr>
+                        <tr>
+                            <td>Bulldog Francés</td>
+                            <td>Francia</td>
+                            <td>Pequeño</td>
+                            <td>10-12</td>
+                            <td>Medio-Bajo</td>
+                        </tr>
+                        <tr>
+                            <td>Pastor Alemán</td>
+                            <td>Alemania</td>
+                            <td>Grande</td>
+                            <td>9-13</td>
+                            <td>Alto</td>
+                        </tr>
+                        <tr>
+                            <td>Pug</td>
+                            <td>China</td>
+                            <td>Pequeño</td>
+                            <td>12-15</td>
+                            <td>Medio</td>
+                        </tr>
+                        <tr>
+                            <td>Husky Siberiano</td>
+                            <td>Rusia</td>
+                            <td>Mediano-Grande</td>
+                            <td>12-14</td>
+                            <td>Muy Alto</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">Nota: Los datos pueden variar según individuo y cuidado.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; PA02 Oscar Vasquez blanco NRC:25572. Mundo Canino. Todos los derechos reservados.</p>
+            <p>Hecho para los mejores amigos del hombre.</p>
+            <p>
+                <!-- SVG de pata de perro animada -->
+                <!--img src="svg/dog-paw-animated.svg" alt="Icono de pata de perro" class="footer-icon animated-paw"-->
+                <img src="svg/dog-paw.svg" alt="Icono de pata de perro" class="footer-icon animated-paw">
+            
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

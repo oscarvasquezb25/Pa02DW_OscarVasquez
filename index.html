@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Canino: Razas del Mundo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icono2.jpg" type="image/x-icon">
+    <meta name="description" content="Explora el fascinante mundo de las razas de perros. Descubre sus orígenes, características y temperamentos.">
+    <meta name="keywords" content="perros, razas, canino, mascotas, adiestramiento, historia canina">
+    <meta name="author" content="Oscar Vasquez Blanco">
+    <!-- Fuentes de Google Fonts para un diseño moderno y sofisticado -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Mundo Canino: Razas del Mundo</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="razas.html">Razas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h2>Explora la Diversidad Canina Global</h2>                    
+                <p>Desde el leal Pastor Alemán hasta el diminuto Chihuahua, cada raza de perro tiene una historia única y características fascinantes. Sumérgete en este viaje por el mundo canino.</p>                
+                <!-- Uso de <figure> y <figcaption> para la imagen principal con image map -->
+                <figure class="hero-image-container">
+                    <!-- La imagen usa 'usemap' para el mapa de imagen interactivo -->
+                    <img src="img/RazasCaninas.jpg" 
+                         alt="Mapa mundial con áreas interactivas de razas caninas" 
+                         usemap="#world-map" 
+                         class="interactive-map-img">
+                    <!--figcaption>Haz clic en las imagenes destacadas para conocer más razas.</figcaption-->
+                </figure>
+
+                <!-- Definición del mapa de imagen con áreas geográficas conceptuales -->
+                <map name="world-map">
+                    <!-- Área conceptual para Europa -->
+                    <area shape="rect" coords="100,100,400,300" alt="Razas Europeas" href="razas.html#europa" title="Razas de Europa">
+                    <!-- Área conceptual para América -->
+                    <area shape="circle" coords="750,250,120" alt="Razas Americanas" href="razas.html#america" title="Razas de América">
+                    <!-- Área conceptual para Asia/Oceanía -->
+                    <area shape="poly" coords="900,50,1150,50,1150,450,900,450" alt="Razas de Asia y Oceanía" href="razas.html#asia-oceania" title="Razas de Asia y Oceanía">
+                </map>
+            </div>
+        </section>
+
+        <section id="razas-destacadas" class="highlight-section container">
+            <h2>Razas Populares en el Mundo</h2>
+            <div class="highlight-grid">
+                <div class="highlight-card">
+                    <img src="img/labrador.jpg" alt="Labrador Retriever">
+                    <h3>Labrador Retriever</h3>
+                    <p>Amigable y leal, ideal para familias. Originario de Canadá.</p>
+                </div>
+                <div class="highlight-card">
+                    <img src="img/german-shepherd.jpeg" alt="Pastor Alemán">
+                    <h3>Pastor Alemán</h3>
+                    <p>Inteligente y protector, excelente perro de trabajo. Originario de Alemania.</p>
+                </div>
+                <div class="highlight-card">
+                    <img src="img/BulldogFrances.jpg" alt="Bulldog Francés">
+                    <h3>Bulldog Francés</h3>
+                    <p>Juguetón y cariñoso, perfecto para apartamentos. Originario de Francia.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; PA02 Oscar Vasquez blanco NRC:25572. Mundo Canino. Todos los derechos reservados.</p>
+            <p>Hecho para los mejores amigos del hombre.</p>
+            <p>
+                <!-- SVG de pata de perro animada -->
+                <img src="svg/huelladeperro.svg" alt="Icono de pata de perro" class="footer-icon animated-paw2">
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
